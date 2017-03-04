@@ -1,0 +1,586 @@
+Febrero 16 de 2017
+
+------------------------------------------
+TALLER PREPARATORIO PARA EL PRIMER PARCIAL
+------------------------------------------
+
+1) Se realizaron los programas en la carpeta de
+   "Punto 1"
+
+2) Se realizaron los programas NumeroDobleMagico2-1.c y NumeroDobleMagico2-2.c
+
+3) Preguntas!
+
+    1. WHY IS C CALLED A MID-LEVEL PROGRAMMING LANGUAGE?
+
+   "C" es llamado un lenguaje de programacion intermedio
+   porque llena el "vacio" entre el lenguaje de la
+   maquina y los lenguajes de programacion de alto nivel.
+   Da acceso directo a los registros del sistema.
+
+    2. WHAT ARE THE FEATURES OF C LANGUAGE? (NAME 5)
+
+   - Compilador que combina las capacidades de un
+   lenguaje ensamblador con elementos de un
+   lenguaje de alto nivel.
+   - Programas escritos en C son eficientes y
+   rapidos.
+   - Es "Case Sensitive," o sea que diferencia las letras
+   mayusculas y minusculas
+   - Es "extendible," o sea que se le pueden agregar
+   nuevas funciones por cualquier programador.
+   - Es un lenguaje de nivel intermedio, por lo que
+   se compila y ejecuta a una velocidad mas alta.
+
+    3. WHAT IS THE DIFFERENCE BETWEEN LOCAL VARIABLE AND
+       GLOBAL VARIABLE IN C?
+
+   Una variable local es una variable que se declara dentro
+   de una funcion especifica.
+   Una variable global es una variable que se usa en todas
+   las funciones de un programa.
+
+    4. WHAT IS ARRAY IN C?
+
+   Un arreglo es una collecion de datos que contienen
+   numeros fijos del mismo tipo.
+   Los arreglos pueden tener una o mas dimensiones.
+
+    5. WHAT IS POINTER IN C?
+
+   Los punteros (son un tipo de variable? que)
+   permiten al programador acceder a la
+   memoria y manipular las direcciones de
+   memoria.
+
+    6. WHY ARE POINTERS DANGEROUS IN BAD HANDS?
+
+   Una persona puede arruinar el sistema operativo
+   o el funcionamiento del sistema al corrupcionar
+   registros de memoria.
+
+    7. WHY ARE POINTERS DANGEROUS WHEN HANDLED INCORRECTLY?
+
+   Si se usan incorrectamente, es posible corrupcionar la
+   memoria del sistema o terminar el programa que estas
+   escribiendo. Con el tiempo, este peligro se ha
+   disminuido con avances en proteccion de memoria en
+   los sistemas operativos (en particular LINUX).
+
+    8. CAN WE ACCESS ARRAYS USING POINTER IN C LANGUAGE?
+
+   Si. Se acceden a los arreglos usando la misma sintaxis
+   que se usa para acceder a los punteros en C.
+
+    9. WHEN IS THE "VOID" KEYWORD USED IN A FUNCTION?
+
+   Se usa cuando la funcion en cuestion no tiene tipo:
+   estas funciones no retornan numeros como 0 o 1.
+
+   10. WHAT ARE THE ADVANTAGES OF USING POINTERS?
+
+   - Podemos asignar memoria dinamicamente a
+   datos o estructuras.
+   - Arreglos o Strings pueden ser pasadas
+   a una funcion de manera mas eficiente.
+   - Mejor manejamiento de la memoria en
+   un programa, y este correra mas rapidamente.
+   - Pointers permiten construir estructuras de
+   datos mas complejas.
+   - Pointers ofrecen una manera alternativa de
+   acceder a un arreglo o elementos de ella,
+   en cualquiera de sus dimensiones.
+   - Permite retornan mas de un valor de una
+   funcion.
+
+   11. WHAT IS THE DIFFERENCE BETWEEN "BREAK" AND
+       "CONTINUE" STATEMENTS?
+
+   BREAK se utiliza para terminar ciclos en
+   un programa mientras que CONTINUE se
+   usa para repetir el ciclo en el que se
+   escribe.
+
+   12. WHAT IS THE DIFFERENCE BETWEEN "Char a"
+       AND "Char a[1]"?
+
+   "Char a" es la declaracion de una variable
+   "a", el cual es un caracter.
+   "Char a[1]" nos dice que "a" es un arreglo
+   de caracteres, y se esta haciendo un llamado
+   al caracter con el indice 1 en este arreglo.
+
+   13. WHAT IS THE DIFFERENCE BETWEEN STRINGS
+       AND ARRAYS?
+
+   Strings son series de caracteres, pero no
+   tienen una implementacion en C, por lo que
+   se usan arreglos de caracteres con el
+   token "\0" adicionalmente para reconocer
+   el arreglo de caracteres como un string.
+   Un String es como un subconjunto de los
+   Arreglos: los Arreglos son series de
+   otros tipos de datos, como los enteros.
+
+   14. WHAT ARE COMPILERS?
+
+   Los Compiladores son programas que traducen
+   el codigo escrito en un lenguaje de programacion
+   a el codigo de maquina utilizada por el procesador
+   del sistema.
+
+   15. HOW IS A NEGATIVE INTEGER STORED?
+
+   Los enteros negativos son almacenados al reservarles
+   2 bytes, o 16 bits de memoria. El primer bit siempre
+   esta reservado para el signo, por lo que el numero
+   mas grande que se puede representar con "int" es
+   2 a la 15 (15 bits).
+
+   Usando "unsigned int" se declara que el entero
+   no va a tener un signo, por lo que puede
+   alcanzar 2 a la 16 al utilizar todos los
+   16 bits asignados.
+
+   16. WHAT IS A DANGLING POINTER?
+
+   Los "dangling pointers" son pointers que
+   referencian objetos que ya han sido
+   borrados / destruidos.
+
+   17. WHERE ARE LOCAL AND GLOBAL VARIABLES
+       STORES?
+
+   El 23 de Febrero, fui a preguntarle al
+   profesor sobre esta pregunta y me dijo
+   que no la tenia que contestar.
+
+   De lo que busque en linea, tengo
+   entendido que cada tipo de dato
+   se almacena en uno de cuatro
+   segmentos en la memoria: data,
+   heap, stack o code, y que
+   los locales se almacenan en stack
+   y los globales en data.
+
+   18. CAN WE ASSIGN A FLOAT VARIABLE TO A
+       LONG INTEGER VARIABLE?
+
+   No. Flotante y Entero Largo son tipos
+   distintos.
+   Sin embargo, existen metodos en
+   linea que demuestran que
+   una conversion de un flotante
+   a un "long int" es posible
+   con algo de codigo, pero basicamente
+   redondea el flotante al entero
+   mas cercano, perdiendo la parte
+   decimal del flotante inicial.
+
+   19. WHAT IS THE RETURN VALUE OF A
+       RELATIONAL OPERATOR?
+
+   Primero que todo, los operadores
+   relacionales se refieren a las
+   relaciones establecidas en las
+   condicionales, por lo que se
+   refieren a "==" , "!=", "<"
+   y ">". Estos operadores
+   retornan Booleanos (True/False)
+   en Python y sus equivalentes (1/0)
+   en C.
+
+   20. WHAT IS THE DEFAULT VALUE OF GLOBAL
+       AND LOCAL VARIABLES?
+
+   Los valores default se asignan no por
+   ser globales o locales si no por el
+   tipo de dato. Los caracteres son
+   inicializados con /0, los datos
+   numericos son inicializados con 0,
+   y los Pointers con NULL.
+
+   21. CAN A POINTER ACCESS AN ARRAY?
+
+   Si, los Punteros pueden acceder
+   a los arreglos.
+
+   22. WHY IS THE STRING LENGTH "N-1"?
+
+   La longitud de un String es N-1 en
+   vez de N porque N se refiere a toda
+   la cadena, incluyendo el ultimo caracter
+   de \0. Como la cadena "hola\0": hola
+   tiene cuatro caracteres, pero incluyendo
+   el \0, son 5 caracteres. N es 5, y la
+   longitud que se quiere comunicar, 4, es
+   N-1.  
+
+   23. COMMENT ON "FUNCTIONS MUST BE DECLARED"
+
+   Cada funcion debe declararse. Si una funcion
+   se quiere usar en un programa, este debe
+   ser declarado: su tipo, sus entradas,
+   el codigo asociado a esa funcion y su
+   identificador.
+
+   24. WHAT IS THE DIFFERENCE BETWEEN C AND
+       PYTHON, ESPECIALLY IN COMPILERS AND
+       INTERPRETERS?
+
+   Hay varias diferencias entre C y Python.
+   Python tiene una sintaxis mas simple mientras
+   que C tiene una sintaxis mas demandadora,
+   donde se necesitan poner ";" entre cada
+   declaracion, {} entre pedazos de codigo,
+   etc. Python es considerado un lenguaje
+   de programacion de nivel mas alto que C,
+   y tienen Pasos de Parametracion distintas:
+   Python usa Pasos de Parametros por valor
+   y C por Referencia.
+
+   En terminos de compiladores e interpretadores,
+   Python es un lenguaje de programacion
+   interpretada mientras que C es compilada. La
+   diferencia es que lenguajes compilados traducen
+   el codigo escrito directamente a codigo de
+   maquina mientras que lenguajes interpretados
+   traducen al codigo a otro codigo que,
+   despues, es traducido a codigo de maquina.
+
+
+   25. WHICH LEVEL DOES C BELONG TO AND
+       WHAT DOES IT MEAN?
+
+   C es considerado un lenguaje de programacion
+   de nivel intermedio aunque hay tambien
+   programadores que sostienen que es un
+   lenguaje de alto nivel. Es porque,
+   a diferencia de otros lenguajes de
+   Alto Nivel como Python o Ruby, C
+   no tiene muchas capas entre el lenguaje
+   y las instrucciones basicas de la maquina.
+
+   Python tiene interpretadores donde cada
+   palabra traduce a muchas mas instrucciones.
+   Es por esto que los lenguajes de alto nivel
+   generalmente producen programas menos eficientes
+   que programas hechos en C.
+
+   26. WHAT ARE LOW-LEVEL, MID-LEVEL AND
+       HIGH-LEVEL LANGUAGES? GIVE AN
+       EXAMPLE FOR EACH ONE.
+
+   Bajo Nivel: Son las instrucciones que
+   corren directamente en el procesador,
+   el codigo de la maquina. "Assembly"
+   es un buen ejemplo.
+
+   Intermedio: Son los lenguajes que
+   tienen pocas capas entre el codigo
+   digitado por el programador y el
+   procesador, el codigo de la
+   maquina. "C" y "C++" son ejemplos.
+
+   Alto Nivel: Son lenguajes que
+   tienen varias capas entre el
+   procesador y el codigo digitado
+   por el programador. Poseen
+   un nivel de abstraccion
+   muy alta. Se consideran
+   mas dinamicos que los otros niveles.
+   Python y Ruby son ejemplos buenos.
+
+   27. WHAT ARE COMPILERS?
+
+   Repetido del punto 14.
+
+   28. WHAT IS THE DIFFERENCE BETWEEN
+       ASSEMBLER, COMPILER AND
+       INTERPRETER?
+
+   Un ensamblador es un programa que
+   convierte el codigo de bajo-nivel
+   al codigo entendido por la maquina.
+
+   Un compilador toma el codigo entero
+   como entrada para traducirlo mientras
+   que el interpretador toma instrucciones
+   particulares como entrada. Ademas, el
+   compilador genera un codigo intermedio
+   mientras que el interpretador no.
+
+   Por estas razones, el compilador toma
+   mas memoria que el interpretador.
+
+   29. EXECUTION OF A C PROGRAM STARTS FROM
+       WHICH FUNCTION?
+
+   La ejecucion de un programa en C arranca
+   desde la funcion main().
+
+   30. IS C LANGUAGE CASE SENSITIVE?
+
+   Si. Esto significa que C es capaz de
+   diferenciar identificadores y funciones
+   con letras mayusculas o minusculas.
+
+   Por ejemplo, "int xyz = 5;" se diferencia
+   de int "XyZ = 7;" pues se consideran 2 variables
+   distintas.
+
+   31. DIFFERENCE BETWEEN CHAR, INT, FLOAT
+       AND DOUBLE DATA TYPES?
+
+   CHAR se usa para definir funciones o variables
+   que retornan o son caracteres como 'a'.
+   Tambien se pueden usar para definir arreglos
+   de caracteres y/o "strings."
+
+   INT se usa para definir funciones o variables
+   que retornan o son enteros, como '1.'
+
+   FLOAT se usa para valores flotantes como '1.5'.
+
+   Finalmente, DOUBLE es lo mismo que FLOAT, sino
+   que DOUBLE reserva mas memoria en el sistema.
+   DOUBLE se usa para definir valores flotantes
+   muchismo mas "grandes" o que tienen mas
+   numeros y, por lo tanto, requieren mas memoria.
+
+   32. USE OF "SIZEOF()" FUNCTION IN C?
+
+   Esta funcion retorna la longitud de una
+   cadena, sumado uno. Por ejemplo,
+   "Hola Mundo" retornaria 11 a pesar de
+   tener 10 caracteres (debido al \0).
+
+   Tambien se puede utilizar para retornar
+   el tamaño de un arreglo en terminos de bytes.
+   Por ejemplo, usando la funcion a un arreglo
+   definido como "char *b; = 'Hola Mundo'" 
+   retornaria 4.
+
+   33. WHAT ARE THE DIFFERENT TYPES OF
+       MODIFIERS IN C?
+
+   La pregunta se refiera a los modificadores
+   a los tipos de datos. Estos son:
+
+   -short: especifica que se debe reservar
+   una memoria fija en cualquier sistema
+   operativo. Un "short int" siempre
+   tomara 2 bytes en cualquier sistema.
+
+   -long: especifica que se debe reservar
+   mas memoria de lo normal al dato.
+
+   -signed: tipicamente no es necesario
+   especificar este tipo, pues dice que
+   el dato tiene un signo. Las variables
+   como "int x = -4;" ya estan inicializados
+   como un signed.
+
+   -unsigned: especifica que se debe
+   reservar menos memoria de lo normal al
+   dato porque este no tiene signo.
+   Por ejemplo, "unsigned int b = 2,"
+
+   LAS PREGUNTAS 34 Y 35 PREGUNTAN POR
+   VARIABLES LOCALES Y GLOBALES. ESTAS
+   RESPUESTAS ESTAN EN LA PREGUNTA 3.
+
+   36. DIFFERENCE BEWTEEN "=" AND "=="?
+
+   Un "=" se usa para asignacion. Por
+   ejemplo, para decirle al sistema que
+   quieres que la variable int x
+   tenga el valor de 3, dices:
+
+   int x = 3;
+
+   Un "==" se usa para condicionales en
+   las cuales dos variables tienen el
+   mismo valor. Por ejemplo, si quieres
+   que el sistema ejecute un codigo
+   especifico cuando 2 variables tengan
+   el mismo valor, dices:
+
+   if (x == y) {
+      printf("Hola.");
+   }
+
+   Este codigo imprimira "Hola." si
+   las variables "x" y "y" tienen el
+   mismo valor.
+
+   37. DIFFERENCE BETWEEN WHILE AND DO-WHILE?
+
+   WHILE ejecuta un codigo mientras un condicional
+   sea cierto. Por ejemplo, si quieres que el
+   sistema ejecute un codigo mientras "x" sea
+   menor que 3, entonces dices:
+
+   while (x < 3) {
+      printf(x);
+      x++;
+   }
+
+   Este codigo aumenta el valor de "x" en 1
+   cada vez que el while ejecuta el codigo,
+   para que el ciclo no vaya infinitamente.
+   A la vez, imprime el valor de "x" mientras
+   este cambia.
+
+   DO-WHILE es lo mismo que WHILE, sino que
+   en orden reverso: se especifica el
+   codigo que se quiere ejecutar antes
+   de la condicional:
+
+   do {
+      printf(x):
+      x++;
+   }
+   while (x < 3);
+
+   La otra diferencia entre DO-WHILE y WHILE
+   es que el cuerpo del DO siempre se
+   ejecuta por lo menos una vez antes de
+   revisar la condicion de WHILE. En WHILE,
+   es posible que el cuerpo del codigo
+   nunca se ejecute si el condicional es falso.
+
+   38. WHAT ARE "&" AND "*" IN C?
+
+   El "&"" o "ampersand" y el "*" o "asterisk" se
+   usan para los pointers. Se declara que una
+   variable es un pointer usando el *:
+
+   int *p; // declara que "p" es un pointer
+
+   Tambien se puede utilizar para convertir
+   un pointer a un valor:
+
+   int x = *p // asigna el valor al cual "p" esta
+   // apuntando a la variable "x"
+
+   Ampersand se utiliza para converit un valor
+   a un pointer:
+
+   int* p2 = &i // pointer p2 apuntara al
+   // valor de "i"
+
+   39. WHAT HAPPENS IF BREAK ISNT USED IN
+       SWITCH CASE IN C?
+
+   Primero que todo, SWITCH es basicamente
+   un tipo de condicional en la cual se
+   compara una variable a una serie de
+   casos. Si la variable en cuestion
+   corresponde a un caso, el ciclo
+   tipicamente termina porque, al final
+   de cada caso, se pone un BREAK.
+
+   El BREAK no se pone en el caso
+   DEFAULT, al cual se recurre si
+   la variable no corresponde a ningun
+   otro caso.
+
+   Por ejemplo:
+
+   char grade = 'B';
+
+   switch(grade) {
+      case 'A' :
+         printf("Excellent!\n" );
+         break;
+      case 'B' :
+      case 'C' :
+         printf("Well done\n" );
+         break;
+      case 'D' :
+         printf("You passed\n" );
+         break;
+      case 'F' :
+         printf("Better try again\n" );
+         break;
+      default :
+         printf("Invalid grade\n" );
+   }
+   
+   printf("Your grade is  %c\n", grade );
+
+   Este codigo imprimiria:
+
+   "Well done"
+   "Your grade is B"
+
+   Si no se utiliza el BREAK, la variable
+   se seguira comparando con los otros
+   casos hasta que se alcance un BREAK o
+   el caso DEFAULT.
+
+   40. USE OF #INCLUDE IN C?
+
+   #INCLUDE se usa para incluir (de ahi
+   el termino) librerias en C o archivos
+   al programa.
+
+   #include <file> incluye librerias o
+   "directories" del sistema.
+
+   #include "file" incluye archivos del
+   mismo directorio que el programa o
+   en el directorio especificado.
+
+   41. IS IT NECESSARY TO DECLARE ARRAY SIZE?
+
+   Depende. Hay 2 tipos de arregloss: fijos y
+   dinamicos.
+
+   Los arreglos fijos si se les debe especificar un
+   tamaño:
+
+   int a[5]; // arreglo "a" tiene 5 elementos
+
+   Los arreglos dinamicos, a diferencia de los
+   fijos, tienen tamaño especificado por el
+   programador o usuario durante la ejecucion
+   y no al compilarlo como con los fijos.
+   Los arreglos dinamicos son mas
+   complicados de implementar y requieren
+   buen uso de pointers.
+
+   42. CAN ARRAY SIZE BE DECLARED AT RUN TIME?
+
+   Si el arreglo es dinamico, si.
+   Si el arreglo es dijo, no. (ver 41)
+
+   43. WHAT IS MEANT BY SEGMENTATION FAULT OR
+       MEMORY FAULT IN C?
+
+   Abreviado como segfault, la falla en
+   segmentacion se refiere a un uso inadecuado
+   de pointers o arreglos en la cual un programa
+   intente acceder a una parte de la memoria
+   restringuida por el sistema operativo.
+
+   En estos casos, si el programa no tiene
+   un "handler" que le permita recuperar
+   de estos tipos de fallas, el sistema operativo
+   manda una señal al programa para que este
+   termine.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
